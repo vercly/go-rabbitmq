@@ -22,10 +22,14 @@ func main() {
 
 	consumer, err := rabbitmq.NewConsumer(
 		conn,
-		"my_queue",
-		rabbitmq.WithConsumerOptionsRoutingKey("my_routing_key"),
-		rabbitmq.WithConsumerOptionsExchangeName("events"),
-		rabbitmq.WithConsumerOptionsExchangeDeclare,
+		"$all.stream",
+		rabbitmq.WithConsumerOptionsQueueNoDeclare,
+		//rabbitmq.WithConsumerStreamOffset(0),
+		rabbitmq.WithConsumerOptionsConsumerName("test"),
+
+		//rabbitmq.WithConsumerOptionsQueueDurable,
+		//rabbitmq.WithConsumerOptionsExchangeKind(amqp.ExchangeTopic),
+		//rabbitmq.WithConsumerOptionsExchangeDurable,
 	)
 	if err != nil {
 		log.Fatal(err)

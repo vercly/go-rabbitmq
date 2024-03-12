@@ -282,6 +282,13 @@ func WithConsumerOptionsConsumerNoWait(options *ConsumerOptions) {
 	options.RabbitConsumerOptions.NoWait = true
 }
 
+// WithConsumerStreamOffset sets the stream offset
+func WithConsumerStreamOffset(offset any) func(options *ConsumerOptions) {
+	return func(options *ConsumerOptions) {
+		options.RabbitConsumerOptions.Args["x-stream-offset"] = offset
+	}
+}
+
 // WithConsumerOptionsLogging uses a default logger that writes to std out
 func WithConsumerOptionsLogging(options *ConsumerOptions) {
 	options.Logger = &stdDebugLogger{}
