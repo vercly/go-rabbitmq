@@ -4,7 +4,7 @@ A wrapper of [rabbitmq/amqp091-go](https://github.com/rabbitmq/amqp091-go) that 
 
 Supported by [Boot.dev](https://boot.dev)
 
-[![](https://godoc.org/github.com/wagslane/go-rabbitmq?status.svg)](https://godoc.org/github.com/wagslane/go-rabbitmq)![Deploy](https://github.com/wagslane/go-rabbitmq/workflows/Tests/badge.svg)
+[![](https://godoc.org/github.com/aosipienko/go-rabbitmq?status.svg)](https://godoc.org/github.com/aosipienko/go-rabbitmq)![Deploy](https://github.com/aosipienko/go-rabbitmq/workflows/Tests/badge.svg)
 
 ## Motivation
 
@@ -25,7 +25,7 @@ The goal with `go-rabbitmq` is to provide *most* (but not all) of the nitty-grit
 Inside a Go module:
 
 ```bash
-go get github.com/wagslane/go-rabbitmq
+go get github.com/aosipienko/go-rabbitmq
 ```
 
 ## 🚀 Quick Start Consumer
@@ -121,7 +121,7 @@ Note that the API is currently in `v0`. I don't plan on huge changes, but there 
 
 ## 💬 Contact
 
-[![Twitter Follow](https://img.shields.io/twitter/follow/wagslane.svg?label=Follow%20Wagslane&style=social)](https://twitter.com/intent/follow?screen_name=wagslane)
+[![Twitter Follow](https://img.shields.io/twitter/follow/aosipienko.svg?label=Follow%20aosipienko&style=social)](https://twitter.com/intent/follow?screen_name=aosipienko)
 
 Submit an issue here on GitHub
 

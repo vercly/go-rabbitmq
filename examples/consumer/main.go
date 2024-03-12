@@ -7,7 +7,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	rabbitmq "github.com/wagslane/go-rabbitmq"
+	rabbitmq "github.com/aosipienko/go-rabbitmq"
 )
 
 func main() {
@@ -24,7 +24,7 @@ func main() {
 		conn,
 		"$all.stream",
 		rabbitmq.WithConsumerOptionsQueueNoDeclare,
-		//rabbitmq.WithConsumerStreamOffset(0),
+		rabbitmq.WithConsumerStreamOffset(0),
 		rabbitmq.WithConsumerOptionsConsumerName("test"),
 
 		//rabbitmq.WithConsumerOptionsQueueDurable,
