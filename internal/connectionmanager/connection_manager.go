@@ -4,9 +4,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/aosipienko/go-rabbitmq/internal/dispatcher"
-	"github.com/aosipienko/go-rabbitmq/internal/logger"
 	amqp "github.com/rabbitmq/amqp091-go"
+	"github.com/vercly/go-rabbitmq/internal/dispatcher"
+	"github.com/vercly/go-rabbitmq/internal/logger"
 )
 
 // ConnectionManager -

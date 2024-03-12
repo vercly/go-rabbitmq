@@ -1,8 +1,8 @@
 package rabbitmq
 
 import (
-	"github.com/aosipienko/go-rabbitmq/internal/logger"
 	amqp "github.com/rabbitmq/amqp091-go"
+	"github.com/vercly/go-rabbitmq/internal/logger"
 )
 
 // getDefaultConsumerOptions describes the options that will be used when a value isn't provided

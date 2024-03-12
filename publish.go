@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/aosipienko/go-rabbitmq/internal/channelmanager"
-	"github.com/aosipienko/go-rabbitmq/internal/connectionmanager"
 	amqp "github.com/rabbitmq/amqp091-go"
+	"github.com/vercly/go-rabbitmq/internal/channelmanager"
+	"github.com/vercly/go-rabbitmq/internal/connectionmanager"
 )
 
 // DeliveryMode. Transient means higher throughput but messages will not be
